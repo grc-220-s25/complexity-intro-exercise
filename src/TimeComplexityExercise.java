@@ -1,23 +1,33 @@
 public class TimeComplexityExercise {
 
+    /*
+     * O(1), where n is multiplied by 2 and returned
+     */
     public static int multiplyByTwo(int n) {
         return n * 2;
     }
 
-
+    /*
+     * O(n), where n is the size of the for-loop
+     */
     public static void printNumbers(int n) {
         for (int i = 1; i <= n; i++) {
             System.out.println(i);
         }
     }
 
+    /*
+     * O(1), since for-loop operations is constant, set to 7
+     */
     public static void printHelloSevenTimes(int n) {
         for(int i = 0; i < 7; i++) {
             System.out.println("Hello");
         }
     }
 
-
+    /*
+     * O(n^2), n is number of operations, applied to both levels of nested for-loops
+     */
     public static void printAllPairs(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
