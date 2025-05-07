@@ -36,7 +36,10 @@ public class TimeComplexityExercise {
         }
     }
 
-
+    /*
+     * 
+     * O(n), where n specifies the number of operations
+     */
     public static int sumUpToN(int n) {
         int sum = 0;
         for (int i = 1; i <= n; i++) {
@@ -45,7 +48,9 @@ public class TimeComplexityExercise {
         return sum;
     }
 
-
+    /*
+     * O(n), O(n + n) simplified. n is for-loop operation limit
+     */
     public static void adjacentLoops(int n) {
         for (int i = 0; i < n; i++) {
             System.out.println("Loop 1, iteration: " + i);
@@ -56,7 +61,9 @@ public class TimeComplexityExercise {
         }
     }
 
-
+    /*
+     * O(n^2), O(n + n^2) simplified. Second for-loop is n^2
+     */
     public static void adjacentAndNestedLoops(int n) {
         for (int i = 0; i < n; i++) {
             System.out.println("First loop, iteration: " + i);
@@ -69,7 +76,9 @@ public class TimeComplexityExercise {
         }
     }
 
-
+    /*
+     * O(n), where n = arr.length
+     */
     public static int findMax(int[] arr) {
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {
