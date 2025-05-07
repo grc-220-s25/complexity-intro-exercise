@@ -1,23 +1,27 @@
 public class TimeComplexityExercise {
 
+    // constant O(1)
     public static int multiplyByTwo(int n) {
         return n * 2;
     }
 
-
+    // O(n)
     public static void printNumbers(int n) {
         for (int i = 1; i <= n; i++) {
             System.out.println(i);
         }
+        for (int i = 1; i <= n; i++) {
+            System.out.println(i);
     }
-
+}
+    // constant O(1)
     public static void printHelloSevenTimes(int n) {
         for(int i = 0; i < 7; i++) {
             System.out.println("Hello");
         }
     }
 
-
+    // O(n^2)
     public static void printAllPairs(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
@@ -26,7 +30,7 @@ public class TimeComplexityExercise {
         }
     }
 
-
+    // O(n)
     public static int sumUpToN(int n) {
         int sum = 0;
         for (int i = 1; i <= n; i++) {
@@ -35,7 +39,7 @@ public class TimeComplexityExercise {
         return sum;
     }
 
-
+    // O(n)
     public static void adjacentLoops(int n) {
         for (int i = 0; i < n; i++) {
             System.out.println("Loop 1, iteration: " + i);
@@ -46,7 +50,7 @@ public class TimeComplexityExercise {
         }
     }
 
-
+    // O(n^2)
     public static void adjacentAndNestedLoops(int n) {
         for (int i = 0; i < n; i++) {
             System.out.println("First loop, iteration: " + i);
@@ -59,7 +63,7 @@ public class TimeComplexityExercise {
         }
     }
 
-
+    //O(arr.length)
     public static int findMax(int[] arr) {
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {
@@ -70,7 +74,7 @@ public class TimeComplexityExercise {
         return max;
     }
 
-
+    // O(arr.length^2)
     public static boolean hasTwoSum(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -82,7 +86,7 @@ public class TimeComplexityExercise {
         return false;
     }
 
-
+//O(arr.length^3)
     public static boolean hasThreeSum(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -96,7 +100,7 @@ public class TimeComplexityExercise {
         return false;
     }
 
-
+// O(arr.length^4)
     public static boolean hasFourSum(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -112,7 +116,7 @@ public class TimeComplexityExercise {
         return false;
     }
 
-
+// O(n)
     public static boolean isSorted(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] > arr[i + 1]) {
@@ -122,7 +126,7 @@ public class TimeComplexityExercise {
         return true;
     }
 
-
+//O(arr.length)
     public static int countUntil(int[] arr, int x) {
         int count = 0;
         while(arr[count] < x) {
@@ -131,7 +135,7 @@ public class TimeComplexityExercise {
         return count;
     }
 
-
+// O(arr.length)
     public static void printEach7Times(int[] arr) {
         for(int num : arr) {
             for(int i = 0; i < 7; i++) {
@@ -140,12 +144,12 @@ public class TimeComplexityExercise {
         }
     }
 
-    
-    public static int nextDivisibleBy10(int x) {
-        while(x % 10 != 0) {
-            x++;
+// Constant O(1)
+    public static int nextDivisibleBy10(int n) {
+        while(n % 10 != 0) {
+            n++;
         }
-        return x;
+        return n;
     }
 
 }
