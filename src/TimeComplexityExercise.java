@@ -89,7 +89,9 @@ public class TimeComplexityExercise {
         return max;
     }
 
-
+    /*
+     * O(n^2), n = arr.length, n^2 nested for-loops
+     */
     public static boolean hasTwoSum(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -101,7 +103,9 @@ public class TimeComplexityExercise {
         return false;
     }
 
-
+    /*
+     * O(n^3), n = arr.length, 3 nested for-loops
+     */
     public static boolean hasThreeSum(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -115,7 +119,9 @@ public class TimeComplexityExercise {
         return false;
     }
 
-
+    /*
+     * O(n^4), n = arr.length, 4 nested for-loops
+     */
     public static boolean hasFourSum(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -131,7 +137,9 @@ public class TimeComplexityExercise {
         return false;
     }
 
-
+    /*
+     * O(n), n = arr.length
+     */
     public static boolean isSorted(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] > arr[i + 1]) {
@@ -141,7 +149,9 @@ public class TimeComplexityExercise {
         return true;
     }
 
-
+    /*
+     * O(n), where n = x
+     */
     public static int countUntil(int[] arr, int x) {
         int count = 0;
         while(arr[count] < x) {
@@ -150,7 +160,9 @@ public class TimeComplexityExercise {
         return count;
     }
 
-
+    /*
+     * O(n), n = arr.length
+     */
     public static void printEach7Times(int[] arr) {
         for(int num : arr) {
             for(int i = 0; i < 7; i++) {
@@ -159,7 +171,9 @@ public class TimeComplexityExercise {
         }
     }
 
-    
+    /*
+     * O(1), where max num of operations is 9
+     */
     public static int nextDivisibleBy10(int x) {
         while(x % 10 != 0) {
             x++;
