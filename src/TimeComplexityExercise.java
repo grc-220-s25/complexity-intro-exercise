@@ -3,6 +3,7 @@ public class TimeComplexityExercise {
     public static int multiplyByTwo(int n) {
         return n * 2;
     }
+    // o(1)
 
 
     public static void printNumbers(int n) {
