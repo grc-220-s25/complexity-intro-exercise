@@ -1,5 +1,6 @@
 public class TimeComplexityExercise {
-
+    //0(1), because n is an integer input. 
+    //It is constant time because it performs a single operation.
     public static int multiplyByTwo(int n) {
         return n * 2;
     }
