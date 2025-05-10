@@ -5,14 +5,16 @@ public class TimeComplexityExercise {
         return n * 2;
     }
 
-
+    //0(n), because n is the input integer.
+    //Loop runs in 'n' times, meaning the system prints each number from 1 to n.
     public static void printNumbers(int n) {
         for (int i = 1; i <= n; i++) {
             System.out.println(i);
         }
     }
 
-    public static void printHelloSevenTimes(int n) {
+    //0(1), where n is an input integer
+        public static void printHelloSevenTimes(int n) {
         for(int i = 0; i < 7; i++) {
             System.out.println("Hello");
         }
