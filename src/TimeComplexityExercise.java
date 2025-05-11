@@ -132,7 +132,7 @@ public class TimeComplexityExercise {
         return true;
     }
 
-
+    //0(n), n is the length of the input array 'arr', loop iterates entire array until element is less than or equal to or if the end of the array is completed.
     public static int countUntil(int[] arr, int x) {
         int count = 0;
         while(arr[count] < x) {
@@ -141,7 +141,7 @@ public class TimeComplexityExercise {
         return count;
     }
 
-
+    //0(n), n is the length of the input array 'arr', since each elements passes through a fixed number '7', the total is 7n so it is 0(n) 
     public static void printEach7Times(int[] arr) {
         for(int num : arr) {
             for(int i = 0; i < 7; i++) {
@@ -150,7 +150,8 @@ public class TimeComplexityExercise {
         }
     }
 
-    
+    //0(1), where x is the input integer
+    //loop runs at 9 times, so its considered constant
     public static int nextDivisibleBy10(int x) {
         while(x % 10 != 0) {
             x++;
