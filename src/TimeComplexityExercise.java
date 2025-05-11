@@ -66,7 +66,7 @@ public class TimeComplexityExercise {
         }
     }
 
-    
+    //0(n), n is the length of the input array 'arr', loop runs once to find max value
     public static int findMax(int[] arr) {
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {
@@ -77,7 +77,7 @@ public class TimeComplexityExercise {
         return max;
     }
 
-
+    //0(n^2), n is the length of input array 'arr', two nested loops to check pair of elements in array
     public static boolean hasTwoSum(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -89,7 +89,8 @@ public class TimeComplexityExercise {
         return false;
     }
 
-
+    //0(n^3), n is length of input array 'arr'
+    //has 3 nested loops, and due to size of array, it is ^3.
     public static boolean hasThreeSum(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -103,7 +104,8 @@ public class TimeComplexityExercise {
         return false;
     }
 
-
+    //0(n^4), n is length of input array 'arr'.
+    //uses a four nested loop to check every quadruplet combinations of the array
     public static boolean hasFourSum(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
@@ -119,7 +121,8 @@ public class TimeComplexityExercise {
         return false;
     }
 
-
+    //0(n), n is the length of the input array 'arr', iterates through
+    //array once to check if every element is less than/equal to the next
     public static boolean isSorted(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] > arr[i + 1]) {
