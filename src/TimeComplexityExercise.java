@@ -14,13 +14,15 @@ public class TimeComplexityExercise {
     }
 
     //0(1), where n is an input integer
-        public static void printHelloSevenTimes(int n) {
+    //Loops runs 7 times, without regarding the value of n.
+    public static void printHelloSevenTimes(int n) {
         for(int i = 0; i < 7; i++) {
             System.out.println("Hello");
         }
     }
 
-
+    //0(n^2), because n is the input integer showing the range of numbers
+    //both the outer and inner loop runs n times
     public static void printAllPairs(int n) {
         for (int i = 1; i <= n; i++) {
             for (int j = 1; j <= n; j++) {
@@ -29,7 +31,8 @@ public class TimeComplexityExercise {
         }
     }
 
-
+    //0(n), where n is the input integer that shows the sum
+    //loop runs in n times, which adds each number from 1 to n until it reaches the sum
     public static int sumUpToN(int n) {
         int sum = 0;
         for (int i = 1; i <= n; i++) {
@@ -38,7 +41,8 @@ public class TimeComplexityExercise {
         return sum;
     }
 
-
+    //0(n), where n is the input integer that shows the iterations for each loop
+    //loops runs 2n
     public static void adjacentLoops(int n) {
         for (int i = 0; i < n; i++) {
             System.out.println("Loop 1, iteration: " + i);
@@ -49,7 +53,7 @@ public class TimeComplexityExercise {
         }
     }
 
-
+    //0(n^2), n represents number of iterations. First loop 0(n), and the other loop runs in 0(n^2).
     public static void adjacentAndNestedLoops(int n) {
         for (int i = 0; i < n; i++) {
             System.out.println("First loop, iteration: " + i);
@@ -62,7 +66,7 @@ public class TimeComplexityExercise {
         }
     }
 
-
+    
     public static int findMax(int[] arr) {
         int max = arr[0];
         for (int i = 1; i < arr.length; i++) {
