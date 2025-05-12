@@ -71,7 +71,7 @@ public class TimeComplexityExercise {
         return max;
     }
 
-// O(n^2) where arr.length
+// O(n^2) where n = arr.length
     public static boolean hasTwoSum(int[] arr, int target) {
         for (int i = 0; i < arr.length; i++) {
             for (int j = 0; j < arr.length; j++) {
