@@ -112,7 +112,7 @@ public class TimeComplexityExercise {
         return false;
     }
 
-//O(n)
+//O(arr.length)
     public static boolean isSorted(int[] arr) {
         for (int i = 0; i < arr.length - 1; i++) {
             if (arr[i] > arr[i + 1]) {
@@ -122,7 +122,7 @@ public class TimeComplexityExercise {
         return true;
     }
 
-//O(x)
+//O(arr.length)
     public static int countUntil(int[] arr, int x) {
         int count = 0;
         while(arr[count] < x) {
@@ -131,7 +131,7 @@ public class TimeComplexityExercise {
         return count;
     }
 
-//O(arr)
+//O(arr.length)
     public static void printEach7Times(int[] arr) {
         for(int num : arr) {
             for(int i = 0; i < 7; i++) {
@@ -140,7 +140,7 @@ public class TimeComplexityExercise {
         }
     }
 
- //O(x)   
+ //O(1)   
     public static int nextDivisibleBy10(int x) {
         while(x % 10 != 0) {
             x++;
